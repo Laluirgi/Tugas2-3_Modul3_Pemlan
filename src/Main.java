@@ -16,6 +16,7 @@ public class Main {
 
         DonasiApp donasi = new DonasiApp("Irgi", jumlah);
         donasi.tampilkanDonasi();
+        System.out.println("silahkan berdonasi kembali");
 
         input.close();
     }
