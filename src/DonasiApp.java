@@ -9,8 +9,6 @@ public class DonasiApp extends Donatur {
 
     /**
      * Konstruktor DonasiApp yang memanggil konstruktor superclass Donatur.
-     * @param nama nama donatur
-     * @param jumlahDonasi jumlah donasi yang diberikan
      */
     public DonasiApp(String nama, double jumlahDonasi) {
         super(nama, jumlahDonasi);
@@ -20,7 +18,8 @@ public class DonasiApp extends Donatur {
      * Menampilkan informasi donasi.
      */
     public void tampilkanDonasi() {
-        System.out.println("Nama Donatur: " + getNamaDonatur());
+        System.out.println("\n=== Informasi Donasi ===");
+        System.out.println("Nama Donatur : " + getNamaDonatur());
         System.out.println("Jumlah Donasi: Rp " + getJumlah());
         System.out.println(UCAPAN_TERIMA_KASIH);
     }

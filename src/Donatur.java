@@ -19,7 +19,6 @@ public class Donatur {
 
     /**
      * Mengambil nama donatur.
-     * @return namaDonatur
      */
     public String getNamaDonatur() {
         return namaDonatur;
@@ -27,7 +26,6 @@ public class Donatur {
 
     /**
      * Mengambil jumlah donasi.
-     * @return jumlah donasi
      */
     public double getJumlah() {
         return jumlah;
@@ -35,7 +33,6 @@ public class Donatur {
 
     /**
      * Mengatur nama donatur.
-     * @param namaDonatur nama donatur yang akan diset
      */
     public void setNamaDonatur(String namaDonatur) {
         this.namaDonatur = namaDonatur;
