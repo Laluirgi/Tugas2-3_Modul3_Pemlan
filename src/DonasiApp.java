@@ -1,11 +1,24 @@
+/**
+ * Kelas DonasiApp merupakan turunan dari kelas Donatur.
+ * Kelas ini berfungsi untuk menampilkan informasi donasi ke konsol.
+ */
 public class DonasiApp extends Donatur {
 
+    /** Pesan ucapan terima kasih */
     public static final String UCAPAN_TERIMA_KASIH = "Terima kasih atas donasinya!";
 
+    /**
+     * Konstruktor DonasiApp yang memanggil konstruktor superclass Donatur.
+     * @param nama nama donatur
+     * @param jumlahDonasi jumlah donasi yang diberikan
+     */
     public DonasiApp(String nama, double jumlahDonasi) {
         super(nama, jumlahDonasi);
     }
 
+    /**
+     * Menampilkan informasi donasi.
+     */
     public void tampilkanDonasi() {
         System.out.println("Nama Donatur: " + getNamaDonatur());
         System.out.println("Jumlah Donasi: Rp " + getJumlah());
