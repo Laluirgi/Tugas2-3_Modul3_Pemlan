@@ -1,10 +1,22 @@
 /**
- * Kelas utama untuk menjalankan program.
- * Program akan membuat objek DonasiApp dan menampilkan informasi donasi
+ * import untuk memasukkan inputan donatur
+ */
+import java.util.Scanner;
+
+/**
+ * Kelas utama untuk menjalankan program DonasiApp.
+ * Program akan meminta input jumlah donasi dari pengguna.
  */
 public class Main {
     public static void main(String[] args) {
-        new DonasiApp("Irgi", 100000).tampilkanDonasi();
-        System.out.println("hola");
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan jumlah donasi (Rp): ");
+        double jumlah = input.nextDouble();
+
+        DonasiApp donasi = new DonasiApp("Irgi", jumlah);
+        donasi.tampilkanDonasi();
+
+        input.close();
     }
 }
