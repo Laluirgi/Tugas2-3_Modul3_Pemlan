@@ -1,6 +1,6 @@
 public class Donatur {
     private String namaDonatur;
-    private double jumlah;
+    private final double jumlah;
 
     public Donatur(String nama, double jumlahDonasi) {
         setNamaDonatur(nama);
